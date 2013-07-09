@@ -1,0 +1,226 @@
+/* @override 
+	http://bondtile.soundmachinedream.com/bt.css
+*/
+
+/* 	
+	CSS Document 
+	Bond Tile [dot] com
+	by Kristian Bjornard & Zindren Design
+	[main design by Zindren Design, site construction and coding by KB]
+*/
+
+/* Basics, Universals 
+----------------------------------------------------------------------------------------*/
+* { margin: 0; padding: 0; text-decoration: none; list-style: none; z-index: 0 !important; 	font-weight: normal;
+}
+.left { float: left; }
+.right { float: right; }
+.clear { clear: both; }
+a img { border: 0; }
+
+/* Typography
+----------------------------------------------------------------------------------------*/
+body { font: 11px/16px "Lucida Grande", Verdana, Tahoma, Helvetica, Arial, sans-serif; color: rgb(151,153,154); }
+p { padding: 0 10px; }
+#slogan p { padding: 0 !important; margin-left: -8px; }
+.white_type {color:white;}
+.orange { background: /*rgb(200,80,51)*/#f05133; }
+#slogan { color: #f05033; font-size:24px; padding-top: 152px;}
+
+/* links
+----------------------------------------------------------------------------------------*/
+a { color: rgb(151,153,154); }
+#footer a { text-decoration: underline; }
+#about #main div.about_text p a {	
+	text-decoration: underline;
+	color: #666;
+	}
+
+/* Layout, alignment, etc.
+----------------------------------------------------------------------------------------*/
+#wrapper { height: 739px; margin: 0 auto; width: 1035px; }
+#wrapper > div.pad { margin: 0 10px 10px 0 !important; }
+#header { height: 228px !important; }
+#logo-title { margin-left: 500px; }
+#logo { height: 210px; width: 210px; }
+#slogan { width: 305px; }
+#main { height: 472px !important; }
+#trowel { margin-left: 70px; margin-top: 120px; z-index: 10; }
+#quote { z-index: 20; }
+#gallery { padding: 10px; }
+#footer { }
+#footer > .pad { height: 28px; width: 100%; }
+#address { margin-left: 500px; width: 210px; padding-top: 10px; }
+
+/* colors & backgrounds
+----------------------------------------------------------------------------------------*/
+html, body, #wrapper, #nav, #work #main, #gallery, #footer > .pad { background: rgb(29,29,29); }
+#wrapper > div.pad {
+	background: rgb(29,29,29) url(i/bg.png) no-repeat top left;
+	border: 1px solid #444;
+	border-top: 0;
+	}
+
+/* special stylings
+----------------------------------------------------------------------------------------*/
+/* Main Text, etc.
+----------------------------------------------------------------------------------------*/
+#main #quotes {
+	font-size: 24px;
+	line-height:110%;
+	margin-left: 570px;
+	padding-top: 10%;
+	}
+#main #quotes p {
+	position: relative;
+	left: -32px;
+	z-index: 20;
+	width: 102%;
+	}
+#main #quotes p span.quote_attribute {
+	font-size: 50%;
+	text-transform: uppercase;
+	font-weight: normal;
+	padding-left: 9px;
+	}	
+#main div.about_text {
+	padding: 60px;
+	}
+#about #main div.about_text p {
+	float: left;
+	width: 42%;
+	font-size: 150%;
+	line-height: 150%;
+	margin: 0 20px;
+	padding: 15px 0;
+	z-index: 20;
+	}
+	
+/* nav bar stylings
+----------------------------------------------------------------------------------------*/
+ul#nav { list-style: none; padding: 8px 0 3px 0;}
+ul#nav li { display: inline; height: 17px; padding: 0 10px; }
+
+/* gallery stylings
+----------------------------------------------------------------------------------------*/
+#gallery ul {
+	list-style: none;
+	height: 330px;
+	overflow: auto;
+	margin: 0 11px;
+	}
+#gallery ul li { 
+	float: left;
+	margin: 0px 8px 5px 0; 
+	}
+#gallery ul li.last {
+	display: list-item;
+	height: 1px;
+	}
+
+/* footer / address block stylings
+----------------------------------------------------------------------------------------*/
+#footer p { padding-top: 8px; }
+#address {
+	z-index: 30;
+	margin-top:-116px !important;
+	}
+#address .pad { margin: 0 10px 0 0; height: 110px;}
+#address .pad ul {
+	display: block;
+	background: url(i/address.png) no-repeat center center;
+	height: 110px;
+	}
+#address ul li {
+	display: none;
+	font-size: 120%;
+	font-weight: normal;	
+	margin-bottom: 2px;
+	text-align: justify;
+	width: 100%;
+	}
+#address ul li.name {
+	font-size: 125% !important;
+	font-weight: bold !important;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	}
+
+/* Request Bid Form
+----------------------------------------------------------------------------------------*/
+#bid div#main {
+	height: 452px !important;
+	}
+#request_bid > div.text {
+	font-size: 16px;
+	line-height:110%;
+	float: left;
+	width: 315px;
+	}
+#request_bid > div.text > p {
+	margin: 0 0 10px 15px;
+	line-height: 150%;
+	}	
+#request_bid form#bid_form {
+	font-size: 13px;
+	margin-top: 20px;
+	margin-left: 350px;
+	}
+#request_bid form#bid_form h3 {
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	}
+#request_bid form#bid_form div.left {
+	width: 150px;
+	}
+#request_bid form#bid_form div.right {
+	width: 522px;
+	height: auto;
+	}
+#bid_form .row {
+	border-top: 1px solid gray;
+	height: 25px;
+	margin-top: 5px;
+	padding-top: 5px;
+	}	
+#bid_form .address_bar {
+	height: 50px;
+	}
+
+div.row.address_bar > div.left.labels { margin-top: 1px !important; }
+div.row.address_bar > div.left.labels.two { margin-top: 4px !important; }
+input#address2 { margin-top: 5px; }
+textarea#describe { margin-bottom: 10px; }
+	
+/* CSS Drop Shadows
+----------------------------------------------------------------------------------------*/
+#wrapper {
+	background: url(i/ds/ds_corners.png) no-repeat bottom right;
+	}
+
+div#header > div.pad.shadow {
+	z-index: 10;
+	background: url(i/ds/ds_dwn.png) repeat-x bottom left;
+	padding-bottom: 10px;
+	margin-bottom: -10px;
+	}
+
+#logo { 
+	margin-bottom: -10px; 
+	background: url(i/ds/ds_corners.png) no-repeat bottom right;
+	}
+
+div.main2.pad.shadow {
+	z-index: 20;
+	background: url(i/ds/ds_up.png) repeat-x top left;
+	padding-top: 10px;
+	margin-top: -10px;
+	}
+
+div#footer.shadow {
+	z-index: 30;
+	background: url(i/ds/ds_up.png) repeat-x top left;
+	padding-top: 10px;
+	margin-top: -10px;
+	}

@@ -1,0 +1,169 @@
+/* @override 
+	http://homepage.mac.com/soundmachinedream/candm/cm.css
+	http://weddingthrowdown.com/cm.css
+*/
+
+/* @Font-Face Declarations 
+*************************************************************** */	
+@font-face {
+  font-family: 'DTLNobelTBold';
+  src: url('ff/dtlnobelt-bold-webfont.eot');
+  src: url('ff/dtlnobelt-bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('ff/dtlnobelt-bold-webfont.woff') format('woff'),
+       url('ff/dtlnobelt-bold-webfont.ttf') format('truetype'),
+       url('ff/dtlnobelt-bold-webfont.svg#DTLNobelTBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  }
+@font-face {
+  font-family: 'DTLNobelTLight';
+  src: url('ff/dtlnobelt-light-webfont.eot');
+  src: url('ff/dtlnobelt-light-webfont.eot?#iefix') format('embedded-opentype'),
+       url('ff/dtlnobelt-light-webfont.woff') format('woff'),
+       url('ff/dtlnobelt-light-webfont.ttf') format('truetype'),
+       url('ff/dtlnobelt-light-webfont.svg#DTLNobelTLight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+/* UNIVERSAL */
+/* ************************************************************ */	
+.clear { clear: both; }
+.left { float: left; }
+.right { float: right; }
+
+/* MAIN LAYOUT */
+/* ************************************************************ */	
+body {
+  background: rgb(152,185,72);
+	color: white;
+	margin: 0;
+	padding: 0;
+	font: 1em/1.675em 'DTLNobelTLight', helvetica, Verdana, arial, sans-serif;	
+	text-align: center;
+	}
+ 
+#page {
+	width: 960px;
+	margin: 0 auto;
+	padding: 0 0 4em 0;
+	border: none;
+	}
+
+#header {
+  background: transparent url(i/h2.jpg) center center no-repeat;	
+	height: 500px;
+  overflow: hidden;
+  text-indent: -9999px;
+  width: 100%;
+  /*background: transparent url(i/h1.jpg) center center no-repeat;	
+	height: 300px;
+  width: 100%;*/
+	}
+
+#main {
+  margin: 2em auto 0 auto;
+  width: 66%;
+  }
+
+.todo #main {
+  margin: 0;
+  width: 100%;
+  }
+	
+/* Type and Links */
+/* ************************************************************ */
+a {
+  color: rgb(46,69,23); /*rgb(18,30,20);*/
+  text-decoration: none;
+  }
+a:hover {
+  border-bottom: 1px solid rgb(46,69,23);
+  padding-bottom: 2px;
+  }
+
+h2 {
+  color: rgb(39,41,98);
+  font-weight: normal;
+  margin-top: 2em;
+  margin-bottom: 0;
+  }
+
+h3, h3 a {
+  font-weight: normal;
+  margin-bottom: 0;
+  }
+
+p.small { font-size: 75%; letter-spacing: 1px; text-transform: uppercase; }
+
+/* NAVIGATION */
+#nav {
+  font-family: 'DTLNobelTBold', Helvetica, Verdana, Arial, Sans-serif;
+	list-style: none;
+  margin-top: 28px;
+	padding: 0;
+	padding-bottom: 4px;
+  text-transform: uppercase;
+  width: 100%
+	}
+#nav li {
+	display: inline;
+	margin: 0;
+  padding: 0
+	}
+#nav li.first {
+	margin-left: 0;
+	margin-right: 0;
+	}
+#nav li a {
+  border: none;
+	color: white;
+	padding: 5px 13px;
+	text-decoration: none;
+	text-transform: uppercase;
+  /**/
+  -webkit-transition: color;
+  -webkit-transition-duration: 500ms;
+  -moz-transition: color;
+  -moz-transition-duration: 500ms;
+	}
+#nav li.first a {
+  padding-left: 0;
+  }	
+#nav li.last a {
+  padding-right: 0;
+  }	
+#nav li a:hover {
+	color: black;
+	}
+#nav li a.active {
+	color: black;
+	}	
+/* -- end navigation -- */
+
+/* MAIN */
+/* ************************************************************ */	
+ul, dl, li, dt, dd {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  }
+
+dt {
+  font-family: 'DTLNobelTBold', Helvetica, Verdana, Arial, Sans-serif;
+  font-size: 90%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  }
+
+dd { line-height: 1.15em; margin-bottom: 1.2em; }
+
+/* specialty CSS */
+/* ************************************************************ */	
+/* bio page layout */
+.bio #main { width: 100%; }
+.bio #main section { text-align: left; }
+/* hotels page */
+/* photo page */
+.photos #main { width: 100%; }
+/* wedding reception page */

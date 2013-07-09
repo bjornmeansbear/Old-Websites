@@ -1,0 +1,223 @@
+/* color palette:
+************************************************
+ light gray  - color:rgb(220,221,222);
+ yellow      - color:rgb(227,176,60);
+ light green - color:rgb(135,189,135);
+
+/* Universals */
+html {margin: 0; padding: 0;}
+.clear {clear:both;}
+.left {float:left;}
+.right {float:right;}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  }
+::selection {
+  background: rgb(135,189,135);
+  color: white;
+  text-shadow: none;
+  }
+
+/* TYPOGRAPHY
+************************************************/
+/*@font-face declarations*/
+@font-face {
+  font-family: 'LeagueGothicRegular';
+  src: url('ff/lg/League_Gothic-webfont.eot');
+  src: url('ff/lg/League_Gothic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('ff/lg/League_Gothic-webfont.woff') format('woff'),
+       url('ff/lg/League_Gothic-webfont.ttf') format('truetype'),
+       url('ff/lg/League_Gothic-webfont.svg#LeagueGothicRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+/* Links */
+#header a:hover {
+  background: rgba(135,189,135,.33);
+  opacity: .5;
+  }
+
+#main a {
+  text-decoration: none;
+  background: rgba(220,221,222,.33);
+  border-bottom: 1px solid rgb(135,189,135);
+  color: white;
+  padding: 1px 2px 1px 2px;
+  -webkit-transition: background;
+  -webkit-transition-duration: 400ms;
+  }
+
+#main a:hover {
+  background: rgb(135,189,135);
+  }
+
+#footer a {
+  color: rgb(135,189,135);
+  text-decoration: none;
+  }
+
+/*the rest*/
+body {
+  color:rgb(220,221,222);
+  font: 1em/1.33em Georgia, Times, "Times New Roman", Serif;
+  }
+
+h1, h2, h3 {
+  font-family: 'LeagueGothicRegular', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  letter-spacing: 1px;
+  line-height: 1.1em;
+  text-transform: uppercase;
+  }
+  
+#main h2 {
+  border-bottom: 4px solid rgb(220,221,222);
+  color: black;
+  font-size: 3.5em;
+  text-align: center;
+  }
+
+#main h3 {
+  border-bottom: 1px solid rgb(220,221,222);
+  color: white;
+  font-size: 2em;
+  }
+
+#sidebar-right ul {
+  color:rgb(135,189,135);
+  font-family: Georgia, Times, "Times New Roman", Serif;
+  font-style: italic;
+  }
+  
+#footer {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 80%;
+  text-transform: uppercase;
+  }  
+
+/* LAYOUT + GENERAL DESIGN
+************************************************/
+body {
+  background: white;
+  margin: 0;
+  padding: 0;
+  }
+  
+#wrapper {
+  width: 100%;
+  }
+  
+#background {
+  background: rgb(220,221,222) url(i/starburst.png) center top no-repeat;
+  width: 100%;
+  -moz-box-shadow: 0 0 5px 5px #888;
+  -webkit-box-shadow: 0 0 5px 5px #888;
+  box-shadow: 0 0 5px 5px #888;
+  }
+  
+#container, #footer {
+  margin: 0 auto;
+  padding-bottom: 1px;
+  width: 1000px;
+  }
+  
+#header {
+  background: transparent url(i/gbc_logo.png) center 60px no-repeat;
+  height: 546px;
+  margin-bottom: 4px;
+  }
+  
+#header h1, #header h1 a {
+  display: block;
+  height: 546px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-indent: -9999px;
+  width: 100%;
+  }
+
+#main {
+  background: black;
+  margin-bottom: 20px;
+  }
+
+#main h2 {
+  background: rgb(227,176,60);
+  margin: 0;
+  padding: 5px 20px 2px 20px;
+  }
+
+#content {
+  margin-right: 384px;
+  padding: 20px
+  }
+
+#content h3 {
+  margin: 0;
+  padding-bottom: .5em;
+  }
+  
+#content p {
+  font-size: 1.4em;
+  line-height: 1.4em;
+  margin:10px 0 0 0;
+  }  
+
+#sidebar-right {
+  background: white;
+  border-left: 4px solid rgb(220,221,222);
+  width: 380px;
+  }
+  
+#sidebar-right ul {
+  background: transparent url(i/icons.png) 20px 20px no-repeat;
+  list-style: none;
+  margin: 0;
+  padding: 36px 20px 20px 120px;
+  }
+  
+#sidebar-right ul li {
+  margin: 0 0 2em 0;
+  }
+  
+#footer {
+  margin-top: 30px;
+  padding-bottom: 30px;
+  }
+  
+#social {
+  list-style: none;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+  width: 60px;
+  /**/
+  position: absolute;
+  top:560px;
+  left:50%;
+  margin-left: -480px;
+  }
+  
+#footer p.right.ookb {
+  display: none;
+  /**/
+  color: #848478;
+  opacity: .33;
+  font-size: 75%;
+  text-transform: uppercase;
+  }
+
+#footer p.right.ookb:hover {
+  opacity: 1;
+  }
+  
+#footer p.right.ookb img {
+  margin: 10px 0 -7px 0;
+  width: 24px;
+  }

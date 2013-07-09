@@ -1,0 +1,275 @@
+/* @override 
+	http://homepage.mac.com/soundmachinedream/candm/cm.css
+	http://weddingthrowdown.com/cm.css
+*/
+
+
+/* UNIVERSAL */
+/* ************************************************************ */	
+.clear { clear: both; }
+.left { float: left; }
+.right { float: right; }
+
+
+
+/* MAIN LAYOUT */
+/* ************************************************************ */	
+body {
+	margin: 0;
+	padding: 0;
+	font: 11px/15px verdana, helvetica, arial;	
+	color: white;
+	min-width: 700px;
+	text-align: center;
+	}
+ 
+body, #main, #nav {
+	background: #9eb1b8;
+	}
+
+#header {
+	width: 100%;
+	height: 180px;
+	top: 0;
+	background: url(i/skyline.jpg) repeat-x bottom left;
+	z-index: 5;
+	}
+	
+#container {
+	width: 620px;
+	margin: 0 auto;
+	padding: 0;
+	border: none;
+	text-align: center;
+	}
+
+
+/* NAVIGATION */
+/* ************************************************************ */	
+#nav {
+	display: block;
+	width: 610px;
+	text-align: center;
+	padding: 0;
+	padding-bottom: 4px;
+	list-style: none;
+	border-bottom: 1px solid #0c3644;
+	}
+
+#nav li {
+	display: inline;
+	margin: 4px;
+	}
+
+#nav li.first {
+	margin-left: 0;
+	margin-right: 0;
+	}
+	
+#nav li a {
+	color: black;
+	padding: 5px 12px;
+	text-decoration: none;
+	text-transform: uppercase;
+	}
+
+#nav li a:hover {
+	background: white;
+	color: black;
+	}
+	
+#nav li a.active {
+	background: #0c3644;
+	color: white;
+	}	
+	
+	
+/* Type and Links */
+/* ************************************************************ */	
+a, #googlemap small a {
+	color: #0c3644;
+	text-decoration: none;
+	background: none;
+	}
+	
+a:hover {
+	background: #0c3644;
+	color: white;
+	}
+
+/* lists */
+dt {
+	color: #60686B;
+	font-weight: bold;
+	margin-top: 15px;
+	margin-bottom: 3px;
+	}
+	
+dd {
+	margin: 0;
+	}
+
+dd > a {
+	margin-left: 10px;
+	line-height: 23px;
+	}
+	
+dd a.inlinelink {
+	margin: 0;
+	line-height: 15px;
+	}	
+
+dd ul {
+	margin: 0 0 0 10px;
+	padding: 0 0 0 5px;
+	}
+dd ul li {
+	margin: 0 0 10px 10px;
+	}
+
+
+/* MAIN */
+/* ************************************************************ */	
+#main {
+	width: 610px;
+	text-align: center;
+	}
+
+#main .pad {
+	margin: 30px 20px;
+	text-align: left;
+	}
+	
+#main h1 {
+	font-size: 200%;
+	color: #8F6477;
+	text-transform: uppercase;
+	}
+
+#main h2 {
+	text-transform: capitalize;
+	color: #60686B;
+	border-bottom: 1px solid;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	margin-top: 0;
+	}
+
+#main p.date {
+	margin-bottom: 2px;
+	margin-top: 25px;
+	text-transform: uppercase;
+	font-size: 85%;
+	color: #60686B;
+	}
+	
+#main div.pad p.date.first {
+	margin-top: 0;	
+	}
+
+#main div.pad p.important {
+	margin-top: 25px;
+	color: #60686B;
+	font-weight: bold;
+	text-transform: uppercase;
+	}
+
+#main ul {
+	margin: 0;
+	}
+	
+	
+	
+/* specialty CSS */
+/* ************************************************************ */	
+/* to do page */
+.chitown {
+	min-width: 900px;
+	}
+	
+.chitown #container {
+	width: 880px;
+	}
+
+.chitown #nav,
+.chitown #container #main {
+	margin: 0 auto;
+	width: 840px;
+	}
+	
+.chitown #container #main .transit {
+	margin-bottom: 20px;
+	}
+	
+.chitown #container #main .column {
+	width: 390px;
+	margin-right: 20px;
+	}
+.chitown #container #main .attractions.column {
+	margin: 0 !important;
+	} 
+	
+	
+/* RSVP page */
+#main #rsvpform h2 {
+	margin-top: 25px;
+	}	
+
+#main #rsvpform h3 {
+	margin-bottom: 0;
+	}
+
+#main #rsvpform div,
+#main #contact div {
+	margin: 5px 0;
+	}
+
+#main #rsvpform label,
+#main #contact label {
+	font-weight: bold;
+	color: #60686B;
+	}
+	
+#main #rsvpform p.date {
+	margin: 0;
+	}
+	
+	
+/* Accomodations Page */
+.accom #main div.pad ul,
+.accom #main div.pad ul li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	}
+.accom #main div.pad ul {
+	padding-left: 20px;
+	}
+.accom #main div.pad ul li strong {
+	color: #8F6477;
+	font-size: 1.2em;
+	margin-left: -10px;
+	}
+	
+	
+/* events page */
+.date #main div.pad > ul {
+	padding: 0;
+	padding-left: 2em;
+	list-style: none;
+	}	
+.date #main div.pad ul li > ul {
+	padding: 0;
+	padding-left: 1em;
+	margin-bottom: .75em;
+	}
+	
+	
+/* About Page */
+body.about #main div.pad h1 {
+	margin-bottom: 1.5em;	
+	}
+object#MediaPlayer.right {
+	margin-top: -2.5em;
+	background: #9eb1b8;
+	}

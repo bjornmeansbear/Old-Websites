@@ -1,0 +1,129 @@
+/* @override http://queenoftartsbakingco.com/css/qot.css */
+
+/* CSS Document */
+
+	* {
+		font-size: 1em;
+		font-family: Georgia, 'Times new roman', Times, Serif;
+		margin: 0; 
+		padding: 0; 
+		list-style: none;
+		}
+	
+	.left { float: left; }
+	.right { float: right; }
+	.clear { clear: both; }
+
+	.one { width: 215px; }
+	.two { width: 450px; }
+	/*temporary, until images show up*/
+	#main .one, #main .two { display: block; }
+		
+	#wrapper { margin: 0 auto; width: 960px; }
+	#wrapper-inner { padding: 20px; }
+	
+	#columntwo { margin-left: 20px; }
+
+	#header { margin-bottom: 20px; }
+
+/************************/
+/* Title & Playing Card */
+/************************/
+	#title h1 {
+		background: url(i/QOT_Title.jpg) top left no-repeat;
+		height: 60px;
+		overflow: hidden;
+		text-indent: -99999px;
+		width: 450px;
+		}
+	#columnone .pad a {
+		background: url(i/QOT_Header.jpg) top left no-repeat;
+		display: block;
+		height: 304px;
+		overflow: hidden;
+		text-indent: -9999px;
+		width: 215px;
+		}
+
+/*****************************/
+/* 2nd Column: Contact/About */
+/*****************************/
+	#columntwo .pad ul li {
+		background: lightgrey;
+		height: 304px;
+		margin-bottom: 20px;
+		}
+
+	#columntwo .pad ul li a {
+		padding: 20px 20px 0 20px;
+		text-align: center;
+		}
+
+
+/*****************************/
+/* 3rd Column: Menu */
+/*****************************/
+	#columnthree {
+		background: lightgrey;
+		height: 628px;
+		}
+	#columnthree .pad {
+		margin-top: 15px;
+		}
+
+/*****************/
+/* Dropdown Menu */
+/*****************/
+	ul#dropdown {
+		list-style: none;
+		height: 100px;
+		margin: 0 0 5px 0;
+		padding: 0;
+		text-align: center;
+		width: 450px;
+		}
+	ul#dropdown li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		position: relative;
+		}
+	ul#dropdown li ul#bakinglist {
+		background: white;
+		border-top: 1px solid gray;
+		border-bottom: 1px solid gray;
+		display: none;
+		list-style: none;
+		margin-top: -25px;
+		padding: 0 auto;
+		position: absolute;
+		text-align: center;
+		top: 50px;
+		width: 450px;
+		}
+	ul li a {
+		display: block;
+		text-decoration: none;
+		}
+	ul#dropdown > li > a {
+		height: 50px;
+		text-transform: uppercase;
+		width: 450px;
+		}
+	ul#dropdown li ul#bakinglist li { 
+		float: left;
+		margin: 0 7px;
+		text-align: center; 
+		}
+	ul#dropdown li ul#bakinglist li a {
+		font-size: 85%;
+		padding: 4px;
+		text-transform: none;		
+		}
+	ul#dropdown li:hover ul#bakinglist, 
+	ul#dropdown li.over ul#bakinglist { 
+	 	display: block;
+	 	}
+/* end dropdown list */
+	
+	

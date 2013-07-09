@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		
+        <title>Respondez sil vous plait</title>
+
+		<link rel="stylesheet" href="cm.css" type="text/css" />		
+        
+        <script type="text/javascript"> 
+
+			function stopRKey(evt) { 
+			  var evt = (evt) ? evt : ((event) ? event : null); 
+			  var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null); 
+			  if ((evt.keyCode == 13) && (node.type=="text"))  {return false;} 
+			} 
+
+			document.onkeypress = stopRKey; 
+
+		</script>
+        
+
+	</head>
+	<body class='rsvp'>
+
+    	<div id='header'></div>
+		
+		<div id='container'>
+
+			<ul id='nav'>
+				<li class='first'><a href='index.html'>Main</a></li>
+				<li><a href='about.html'>About Us</a></li>
+				<li><a href='events.html'>Events</a></li>
+				<li><a href='todo.html'>To Do</a></li>
+				<li><a href='accom.html'>Travel</a></li>
+				<li><a href='registry.html'>Registry</a></li>
+				<li class='last'><a href='rsvp.html' class='active'>RSVP</a></li>
+			</ul>
+            
+			<div id='main'>
+               	<div class='pad'>
+                
+                    <h1>RSVP Form</h1>
+                    
+                    <form id='rsvpform' method="post" action="rsvp.php">
+                        <div>
+                            <label for='name'>Name:</label>
+                            <input type='text' id='name' name='name' size='30' />
+                        </div>
+                        <div>
+                            <label for='email'>Email:</label>
+                            <input type="text" id='email' name="email" size='30' />
+                        </div>
+                        <h2>Which Events do you Plan on Attending?</h2>
+                        <div class='roast event'>
+                            <h3>Pig Roast</h3>
+                            <p class='date'>Friday, October 17</p>
+                            <input type='radio' name="roast_radio" value="Yes" />Yes
+                            <input type='radio' name="roast_radio" value="Yes" />No
+                            <select name='roast_peeps'>
+                                <option value=''>#</option>
+                                <option value='1'>1</option>
+                                <option value='2'>2</option>
+                                <option value='3'>3</option>
+                                <option value='4'>4</option>
+                                <option value='5'>5</option>
+                                <option value='6'>6</option>
+                                <option value='7'>7</option>
+                                <option value='8'>8</option>
+                                <option value='9'>9</option>
+                                <option value='10'>10</option>
+                            </select>of People Attending (including you)
+                        </div>
+                        <div class='tru event'>
+                            <h3>Reception at TRU</h3>
+                            <p class='date'>Saturday, October 18, Noon-3:00pm</p>
+                            <input type='radio' name="tru_radio" value="Yes" />Yes
+                            <input type='radio' name="tru_radio" value="Yes" />No
+                            <select name='tru_peeps'>
+                                <option value=''>#</option>
+                                <option value='1'>1</option>
+                                <option value='2'>2</option>
+                                <option value='3'>3</option>
+                                <option value='4'>4</option>
+                                <option value='5'>5</option>
+                                <option value='6'>6</option>
+                                <option value='7'>7</option>
+                                <option value='8'>8</option>
+                                <option value='9'>9</option>
+                                <option value='10'>10</option>
+                            </select>of People Attending (including you)
+                        </div>
+                        <div class='throwdown event'>
+                            <h3>Throwdown</h3>
+                            <p class='date'>Saturday, October 18, 9:00pm</p>
+                            <input type='radio' name="td_radio" value="Yes" />Yes
+                            <input type='radio' name="td_radio" value="Yes" />No
+                            <select name='td_peeps'>
+                                <option value=''>#</option>
+                                <option value='1'>1</option>
+                                <option value='2'>2</option>
+                                <option value='3'>3</option>
+                                <option value='4'>4</option>
+                                <option value='5'>5</option>
+                                <option value='6'>6</option>
+                                <option value='7'>7</option>
+                                <option value='8'>8</option>
+                                <option value='9'>9</option>
+                                <option value='10'>10</option>
+                            </select>of People Attending (including you)
+                        </div>
+                        <div>
+                            <label for='comment'>Additional Comments:</label><br />
+                            <textarea id='comment' name='comment' cols='60' rows='8'></textarea>
+                        </div>
+                        <div class='submit-reset'>
+                            <input type="submit" name='action' value='Submit' class='button' />
+                            <input type='reset' value='Start Over' class='button' />
+                        </div>
+                    </form>                                			
+
+				</div>
+
+            </div>
+			
+            <div id='footer'></div>
+                  	
+        </div>
+        
+	</body>
+
+</html>
