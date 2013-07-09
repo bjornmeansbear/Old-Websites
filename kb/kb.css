@@ -1,0 +1,24 @@
+/* @override http://homepage.mac.com/soundmachinedream/kb/kb.css */
+
+/* CSS Document */* {	color: black; font-family: sans-serif; font-size: 11px; line-height: 16px; text-align: justify; }body { padding: 2px; background-image: url(bgstripes.gif); }h1 { text-transform: uppercase; margin: 0; padding:0; font-family: sans-serif; font-size: 12px; color: #666 }a { margin: 0; padding:0; font-family: sans-serif; font-size: 11px; color: #666; text-decoration: none; }a:hover { margin: 0; padding:0; font-family: sans-serif; font-size: 11px; color: #f66; text-decoration: underline; }p { margin: 0; padding: 0; }ul {list-style-type: none; margin: 0; padding: 0; text-align: left;}ul li {margin: 0; padding: 0; text-align: left; }dl {list-style-type: none; margin: 0; padding: 0; text-align: left;}dl dt {margin: 0; padding: 0; text-align: left;}dl dd {margin: 0; padding: 0; text-align: left;}#container {	width: 494px;	padding: 10px;	margin-left: auto;	margin-right: auto;	border: 1px dotted #888;	background-color: white;	}#header {	width: 494px;	height: 200px;	margin: 0;	padding: 0;	background-image: url(header/head3.jpg);	background-repeat: no-repeat;	background-position: top left;	}/**/#navbar {	width: 494px;	height: 15px;	margin: 0;	padding: 0;	border: none;	background-color: #666;	}.rollover { float: right; margin: 0; padding: 0; }#hp { display: block; height: 15px; width: 72px; margin: 0; padding: 0; background: url(photo/home.gif) 0 0 no-repeat; }#art { display: block; height: 15px; width: 60px; margin: 0; padding: 0; background: url(photo/art2.gif) 0 0 no-repeat; }#rest { display: block; height: 15px; width: 60px; margin: 0; padding: 0; background: url(photo/rest.gif) 0 0 no-repeat; }#pm { display: block; height: 15px; width: 80px; margin: 0; padding: 0; background: url(photo/more.gif) 0 0 no-repeat; }a#hp:hover,a#art:hover,a#rest:hover,a#pm:hover { background-position: 0px -15px; }/**/.space1 {	clear: both;	display: block;	width:494px;	height: 10px;	margin: 0;	padding: 0;	}#content {	float: left;	width: 338px;	border: 1px dotted #888;	background-image: url(bgstripes2.gif);	overflow:hidden;	display:inline;	}
+div.entry-div {
+	margin: 10px 5px 20px 5px;
+	}		p.date {	margin: 0;	padding: 0;	color: #888;	font-size: 9px;	}
+p.entry {
+	margin: 5px 0;
+	}
+ul.entry {
+	margin: 5px 5px 5px 0;
+	}
+ul.entry li {
+	margin: 5px 0;
+	}
+		
+ul#work li { display: inline; margin: 6px 3px;}	
+		#right {	float: right;	width: 144px;	}#pow { display: block; width: 144px; height: 15px; margin:0; padding: 0; background-image: url(photo/pic.gif); }#pic {	width: 144px;	height: 144px;	margin: 0;	padding: 0;	border: none;	background-image: url(photo/kissyface.jpg);	background-repeat: no-repeat;	background-position: center center;	}.space2 { display: block; width:144px; height: 10px; margin: 0; padding: 0; }.textleft { 	text-align: left; 	}#links { display: block; width: 144px; height: 15px; margin:0; padding: 0; background-image: url(photo/links.gif); }a.linksbar { color: black; text-decoration: none; }a:hover.linksbar { color: #666; text-decoration: underline; }#nav {	width: 132px;	padding: 5px;	margin: 0;	border: 1px dotted #888;	background-image: url(bgstripes2.gif);	}#validate {display: block; width: 144px; height: 15px; margin:0; padding: 0; background-image: url(photo/valid.gif);}#valid {	width: 132px;	height: 15px;	padding: 5px;	margin: 0;	border: 1px dotted #888;	background-image: url(bgstripes2.gif);	}.validlink { padding-right: 20px; margin: 0; }.validlink:hover { padding-right: 20px; margin: 0; }#enjoy {display: block; width: 144px; height: 15px; margin:0; padding: 0; background-image: url(photo/enjoy.gif);}#whatshot {	width: 132px;	padding: 5px;	margin: 0;	border: 1px dotted #888;	background-image: url(bgstripes2.gif);	}
+
+ul.sublist {
+	margin-left: 20px;
+	list-style-type: circle;
+	}
+	#archiver {display: block; width: 144px; height: 15px; margin:0; padding: 0; background-image: url(photo/archive.gif);}#archive {	width: 132px;	padding: 5px;	margin: 0;	border: 1px dotted #888;	background-image: url(bgstripes2.gif);	}#bottom {	clear: both;	width: 494px;	height: 50px;	margin: 0;	padding: 0;	background-image: url(header/base1.gif);	background-repeat: no-repeat;	background-position: center center;	}

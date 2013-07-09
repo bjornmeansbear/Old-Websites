@@ -1,0 +1,27 @@
+@charset "UTF-8";/* CSS Document */* {	margin:0;	padding:0;	}.left { float: left; }.right { float: right; }.clear { clear: both; }	html {	font-size: 1em;	line-height: 1.5em;	}	body {	font: .75em Helvetica, Verdana, Geneva, Arial, sans-serif;	}/* =layout */#wrap {	width: 40em;	margin: 10px auto;	}
+	
+#home_fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	}	#header {	margin: 1.5em 0;	}	#sidebar-left {	width: 7em;	}	#center {	margin-left: 8em;	width: 32em;	}/* colors, backgrounds, etc */body {	background: #333;	color: #999;	}
+	
+#home_fixed {
+	background: #999;
+	padding: .25em;
+	}/* =typography */	#center div p,#center div dl,ol.progress li {	margin-bottom: 1.5em;	}#center div dl dt {	font-weight: bold;	}
+	/* =links */a {	color: #999;	text-decoration: none;	}
+
+a:hover {	color: #333;	background: #999;	}
+
+#home_fixed a {
+	padding: .5em;
+	color: #333;
+	}		
+
+#home_fixed a:hover {
+	background: none;
+	color: black;
+	}		
+
+/* =sidebar-left general styles */#sidebar-left ul {	list-style: none;	}ul li,dl dt,dl dd {	margin: 3px 0;	}	ol.progress {	margin-left: 2em;	}

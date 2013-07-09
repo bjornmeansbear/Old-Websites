@@ -1,0 +1,82 @@
+/* =Typography
+-----------------------------------------------------------------------------*/
+* {
+	font-size: 1em;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: none;
+	}
+	
+body { 
+	font: normal 80%/1.6 Georgia, Times, "Times New Roman", serif;
+	}
+
+#footer {
+	font-family: Verdana, Lucida, "Lucida Grande", Helvetica, Arial, sans-serif;
+	font-size: 75%;
+	margin: 10px;
+	text-align: center;
+	}
+	
+/* =Layout
+-----------------------------------------------------------------------------*/
+#container {
+	width: 820px;
+	margin: 10px auto 30px auto;	
+	}
+	
+#content p {
+	margin: 0 8px 20px 8px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid grey;
+	}
+
+#content img {
+	border: 1px solid grey;
+	}
+
+.postcard p.imageframe {
+	text-align: right;
+	}
+	
+/* =general
+-----------------------------------------------------------------------------*/
+p.textblock {
+	text-align: left;
+	padding: 0 150px;
+	}
+
+span.name {
+	font-size: 90%;
+	font-family: Verdana, Lucida, "Lucida Grande", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	float: left;
+	color: grey;
+	}	
+
+/* =Links
+-----------------------------------------------------------------------------*/
+a {
+	color: black;
+	text-decoration: none;	
+	background: yellowgreen;
+	}
+
+a:hover {
+	color: white;
+	text-decoration: underline;
+	}
+	
+.postcard ul#nav {
+	text-align: center;
+	list-style: none;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid grey;
+	}
+	
+.postcard ul#nav li {
+	display: inline;
+	margin: 0px 10px;
+	}	

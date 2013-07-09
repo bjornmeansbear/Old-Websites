@@ -1,0 +1,84 @@
+/* @override http://homepage.mac.com/soundmachinedream/bob/bob.css */
+
+/* CSS Document *//* brick oven bakery, northfield minnesotawebpage created by The Office of Kristian BjornardStarted on August 27 2005, finished ?*/
+/* global tags, etc... */* { font-size: 12px; margin: 0; padding: 0; border: none; list-style: none; }
+
+body {	margin: 0 0 15px 0;	padding: 0;	border: none;	background: white; 	background-image: url(bg.gif);
+	font-family: georgia, serif;
+	}
+	
+h1 { font-size: 130%; color: rgb(116, 161, 19); font-style: italic; }
+#photo_page h2 { font-size: 16px; color: rgb(116, 161, 19); font-style: italic; margin-top: 20px;}
+h2 { font-size: 120%; color: rgb(116, 161, 19); }a { color: black; text-decoration: none; }a:hover { color: rgb(116, 161, 19); text-decoration: none; }
+.medtext a { color: rgb(116,161,19); }
+
+/*class specs */.left { float: left; text-align: left; }.right { float: right; text-align: right; }.clear { clear: both; }.small { font-size: 10px; }	.white { color: white; }.red { color: rgb(200,90,39); }.border { margin: 1px 5px 1px 5px; }.stripe {	display: block;	margin: 0 20px;	height: 16px;	background-color: rgb(200, 90, 39);	}
+.lgtext { font-size: 125%; }
+.medtext { font-size: 115%; }
+/* specific div tags and such */#wrapper {	width: 800px;	margin-left: auto;	margin-right: auto;	padding: 10px 0 5px 0;	border: 1px solid rgb(112, 199, 212);	background-color: white;	}
+	
+#header {	display: block;	height: 150px;	margin: 0 20px 10px 20px;	padding: 0;	border: none;	background-image: url(header.jpg);	background-repeat: no-repeat;	background-position: top center; 	}
+	
+#footer {	margin: 0 0 15px 0;	padding: 0;	border: none;	clear: both;	display: block;	height: 12px;	}
+	
+ul#nav {
+	border-bottom: 1px solid rgb(116, 161, 19); 
+	font-size: 120%; 
+	font-family: verdana, sans-serif !important; 
+	list-style-type: none; 
+	margin: 10px 20px; 
+	padding: 0 0 5px 0; 
+	text-transform: uppercase; 
+	}
+#nav li {
+	border-right: 1px solid rgb(144,229,238);
+	display: inline;
+	padding: 0 10px;
+	}
+#nav li.first {
+	border-left: 1px solid rgb(144,229,238);
+	}
+
+#contentarea {
+	clear: both;
+	margin-bottom: 20px;
+	}
+
+#text {
+	margin: 0 20px;	}
+	
+#breadpic {	margin: 0 20px 20px 0;	padding: 0;	}
+	
+#map {	display: block;	width: 600px;	margin: 10px auto 0 auto;	height: 450px;	background-image: url(map.jpg);	background-repeat: no-repeat;	background-position: center center;	}
+
+/*schedule*/	
+#schedule { width: 760px; margin: 0 auto; clear: both; }
+
+#schedule div.bread {
+	border-left: 1px solid gray;
+	margin: 0 0 10px 10px;
+	padding: 0 0 15px 0;
+	width: 249px;
+	}
+#schedule div#col1.bread { border: none; margin: 0; width: 239px; }
+
+#schedule div#col1.bread h1 { margin: 0 0 5px 0; }
+#schedule div#col2.bread h1,
+#schedule div#col3.bread h1 { margin: 0 0 5px 10px; width: 240px; }
+
+#schedule div.bread h2 { margin: 5px 0; }
+
+#schedule div.bread table { width: 235px; }
+#schedule div#col2.bread table,
+#schedule div#col3.bread table { margin: 0 0 10px 10px;}
+
+#schedule div.bread table td.type { }
+#schedule div.bread table td.price { text-align: right; }
+
+#schedule div.bread table tr:hover { background-color: rgb(144,229,238); }
+#schedule div.bread table tr.day:hover { background: none !important; }
+
+ul#gourmet_items { margin: 0 0 0 12px; }
+
+/*bakery photos*/
+#images {	width: 600px;	margin: 0 auto;	}
