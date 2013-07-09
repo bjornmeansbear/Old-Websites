@@ -1,0 +1,647 @@
+/*
+ * HTML Element Styling
+ * This where default styling for basic HTML elements is set.
+-----------------------------------------------------------------------------------*/
+
+/* Font sizes, etc. */
+body { font-size: 100%; }
+#page { font-size: 0.75em; line-height: 1.5em; }
+body, p, caption, th, td, input, textarea, select, option, legend, fieldset { font-family: Helvetica, Arial, "Nimbus Sans L", sans-serif; }
+pre, code {
+  font-size: 1.1em; /* Monospace fonts can be hard to read */
+  font-family: "Courier New", "DejaVu Sans Mono", monospace;
+}
+
+/* Headings */
+h1 {
+  font-size: 2em;
+  line-height: 1.3em;
+  margin-top: 0;
+  margin-bottom: 0.5em;}
+
+h2 {
+  font-size: 1.5em;
+  line-height: 1.3em;
+  margin-top: 0.667em;
+  margin-bottom: 0.667em;
+}
+
+h3 {
+  font-size: 1.3em;
+  line-height: 1.3em;
+  margin-top: 0.769em;
+  margin-bottom: 0.769em;
+}
+
+h4, h5, h6 {
+  font-size: 1.1em;
+  line-height: 1.3em;
+  margin-top: 0.909em;
+  margin-bottom: 0.909em;
+}
+
+/* Block-level elements */
+p, ul, ol, dl, pre, table, fieldset {
+  margin: 1em 0;
+}
+
+blockquote {
+  margin: 1em 2em;
+}
+
+/* Lists */
+ul, ol {
+  margin-left: 0;
+  padding-left: 2em;
+}
+
+.block ul,
+.item-list ul {
+  margin: 1em 0;
+  padding: 0 0 0 2em;
+}
+
+ul ul, ul ol,
+ol ol, ol ul,
+.block ul ul, .block ul ol,
+.block ol ol, .block ol ul,
+.item-list ul ul, .item-list ul ol,
+.item-list ol ol, .item-list ol ul {
+  margin: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul.menu li,
+li.expanded,
+li.collapsed,
+li.leaf {
+  margin: 0;
+  padding: 0;
+}
+
+ul          { list-style-type: disc; }
+ul ul       { list-style-type: circle; }
+ul ul ul    { list-style-type: square; }
+ul ul ul ul { list-style-type: circle; }
+ol          { list-style-type: decimal; }
+ol ol       { list-style-type: lower-alpha; }
+ol ol ol    { list-style-type: decimal; }
+
+dt {
+  margin: 0;
+  padding: 0;
+}
+
+dd {
+  margin: 0 0 0 2em;
+  padding: 0;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+}
+
+th, thead th, tbody th {
+  text-align: left;
+  padding: 0;
+  border-bottom: none;
+}
+
+tbody {
+  border-top: none;
+}
+
+/* Images */
+img {
+  border: 0;
+}
+
+/* Forms */
+form { margin: 0; padding: 0; }
+
+fieldset { margin: 1em 0; padding: 0.5em; }
+/*-----------------------------------------------------------------------------------*/
+
+/*** MAIN LAYOUT + STYLES ***/
+/*-----------------------------------------------------------------------------------*/
+
+/* color palette */
+/*
+charcoal: rgb(38,35,36)
+metal:    rgb(171,175,166)
+linen:    rgb(237,231,221)
+kraft:    rgb(232,211,162)
+glass:    rgb(91,155,152)
+--
+olive:    rgb(92,99,84)
+dk gray:  rgb(84,87,99)
+lavendar: rgb(188,141,184)
+*/
+
+/* The Page GRID */
+.one-column    { width:   65px; }
+.two-column    { width:  150px; }
+.three-column  { width:  235px; }
+.four-column   { width:  320px; }
+.five-column   { width:  405px; }
+.six-column    { width:  490px; }
+.seven-column  { width:  575px; }
+.eight-column  { width:  660px; }
+.nine-column   { width:  745px; }
+.ten-column    { width:  830px; }
+.eleven-column { width:  915px; }
+.twelve-column { width: 1000px; }
+
+/* Universal Miscellany */
+.left {float:left;}
+.right {float:right;}
+.clear {float:none; clear:both;}
+ 
+#page-wrapper {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+  /**/
+  /*overflow-y: hidden;*/ /* un-comment this if Safari/firefox show gaps at bottom of page due to use of .clearfix */
+}
+
+/* Prevent overflowing content */
+#header,
+#content,
+#navigation,
+.region-sidebar-first,
+.region-sidebar-second,
+#footer,
+.region-page-closure {
+  overflow: visible;
+  word-wrap: break-word; /* A very nice CSS3 property */
+}
+
+#navigation {
+  overflow: hidden; /* May need to be removed if using a dynamic drop-down menu */
+}
+
+/* Body */
+body { color: rgb(38,35,36); }
+#page-wrapper {}
+#page {}
+
+/* Final Typography, @Font-Face, Etc.
+-----------------------------------------------------------------------------------*/
+@font-face {
+  font-family: 'IMFELLEnglishPRORegular';
+  src: url('ff/feenrm28c-webfont.eot') format('eot');
+  src: local('☺'), url('ff/feenrm28c-webfont.woff') format('woff'), url('ff/feenrm28c-webfont.ttf') format('truetype'), url('ff/feenrm28c-webfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+@font-face {
+    font-family: 'IMFELLEnglishPROItalic';
+  src: url('ff/feenit27c-webfont.eot') format('eot');
+    src: local('☺'), url('ff/feenit27c-webfont.woff') format('woff'), url('ff/feenit27c-webfont.ttf') format('truetype'), url('ff/feenit27c-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+/* links */
+a { color: rgb(91,155,152); text-decoration: none; }
+a:hover, a:focus { text-decoration: underline; }
+a img { border: none; } 
+
+/* Header
+-----------------------------------------------------------------------------------*/
+#site-name a {
+  float: left;
+  background: transparent url(img/logo.jpg) center center no-repeat;
+  display: block;
+  height: 70px;
+  margin-bottom: 13px;
+  overflow: hidden;
+  text-indent: -99999px;
+  }
+
+#trohv-defn {
+  float: right;
+  margin-bottom: 0px;
+  }
+#trohv-defn p {
+  font-family: Courier, "MS Courier New", Prestige, Monaco, Everson Mono, mono;
+  font-size: 135%;
+  line-height: 125%;
+  margin: 14px 0 0 0;
+  }
+  
+ul#socialnetwork { margin: 0; padding: 0; text-align: right;}
+ul#socialnetwork li { display: inline-block; text-align: left; margin: 0; padding: 0; }
+ul#socialnetwork li a {
+  display: inline-block;
+  height: 22px;
+  overflow: hidden;
+  text-indent: -99999px;
+  width: 22px;
+  }
+ul#socialnetwork li.fb a { background: url(http://officeofkb.com/sites/all/i/fbicon.png) center center no-repeat; }
+ul#socialnetwork li.twit a { background: url(http://officeofkb.com/sites/all/i/twiticon.png) center center no-repeat; }
+
+/* Navigation
+-----------------------------------------------------------------------------------*/
+#navigation {
+  border-bottom: 1px solid rgb(38,35,36); 
+  border-top: 1px solid rgb(38,35,36);
+  clear: both;
+  margin-top: 20px;
+  padding: 0; 
+  }
+
+#navigation ul#main-menu {
+  list-style: none;
+  margin: 0;
+  padding: 8px 0 6px 0;
+  text-align: center;
+  }
+
+#navigation ul#main-menu li {
+  display: block;
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 14.25%;
+  }
+
+#navigation ul#main-menu li a {
+  color: rgb(38,35,36);
+  display: block;
+  font-family: "IMFELLEnglishPRORegular", Georgia, "Times New Roman", Times, Serif;
+  font-size: 1.1em;
+  height: 18px;
+  letter-spacing: 2px;
+  line-height: 18px;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  }
+
+#navigation ul#main-menu li.active a {color:rgb(91,155,152);}
+#navigation ul#main-menu li.active a:before { content:'> ';color:rgb(91,155,152); }
+#navigation ul#main-menu li.active a:after { content:' <';color:rgb(91,155,152); }
+
+/* Main (container for everything else)
+-----------------------------------------------------------------------------------*/
+#main { padding-top: 15px; }
+
+/* Footer 
+-----------------------------------------------------------------------------------*/
+#footer {  
+  border-top: 1px solid rgb(38,35,36);
+  margin-top: 10px;
+  padding-top: 20px;
+  }
+#footer p { margin: 0 0 10px 0; }
+
+.footInfo {font-size: 90%; line-height: 133%;}
+.footInfo div.left { width: 154px; }
+.footInfo h2.title {
+  font-family: "IMFELLEnglishPRORegular", Georgia, "Times New Roman", Times, Serif;
+  font-size: 1.1em;
+  font-weight: normal;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  }
+
+a.mailinglist {
+  background: transparent url(img/mail.png) -2px center no-repeat;
+  display: inline-block;
+  height: 20px;
+  margin: 0 5px 2px -2px;
+  overflow: hidden;
+  padding: 6px 0 0 0;
+  text-indent: 38px;
+  }
+
+a.googlemap {
+  display: inline-block;
+  height: 75px;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  text-indent: -9999px;
+  }
+
+#bmore a.googlemap { background: transparent url(img/bmore-map.png) center center no-repeat; }
+#dc a.googlemap { background: transparent url(img/dc-map.png) center center no-repeat; }
+
+a.hellobmore:before,
+a.hellodc:before {
+  color: rgb(84,87,99);
+  content: "contact us: ";
+  font-size: 75%;
+  font-weight: bold;
+  text-transform: uppercase;
+  }
+  
+
+/*
+1. Shop Main
+2. Shop Category
+3. Shop Item
+4. Wishlist
+5. Cart
+6. Checkout
+7. Login
+8. My Account
+9. Order History
+*/  
+
+/* multi use styles */
+#shopheader {
+  margin-bottom: 15px;
+}
+
+ul#usermenu,
+ul#categorymenu,
+ul#shopmain,
+ul#shopcategory {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul#usermenu li,
+ul#categorymenu li,
+ul#shopmain li,
+ul#shopcategory li {
+  display: block;
+  float: left;
+}
+
+p.categorytitle,
+h2.flag {
+  background:transparent url(img/tealflag.png) right top no-repeat;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: normal;
+  height: 35px;
+  line-height: 35px;
+  margin: 0;
+  padding: 0;
+  text-transform: lowercase;
+}
+
+h2.flag {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 0 40px 0 20px;
+}
+
+/* search form stuff */
+form#searchform {
+  margin: 0 0 10px 0;
+}
+
+fieldset.search {
+	background: transparent;
+	border: none;
+	height: 26px;
+	margin: 0;
+  padding: 0;
+	width: 300px;
+}
+
+.search input.box, .search button.btn {
+  display: block;
+	border: none;
+	float: left;
+}
+
+.search input.box {
+	background: white;
+	border: 1px solid rgb(91,155,152);
+	color: black;
+	height: 24px;
+  margin: 0;
+	padding: 0;
+  width: 201px;
+}
+
+.search button.btn {
+	background: transparent url(img/btn-search.png) right top no-repeat;
+	cursor: pointer;
+	height: 26px;
+  margin: 0;
+	padding: 0;
+	text-indent: -9999px;
+	width: 97px;
+}
+
+/* User menu */
+ul#usermenu li:after {
+  color: rgb(91,155,152);
+  content: "/";
+  margin-right: 5px;
+  padding-left: 5px;
+}
+
+ul#usermenu li.last:after {
+  color: rgb(91,155,152);
+  content: none;
+  margin-right: 0;
+  padding-left: 0;
+}
+
+
+/* 1. Shop Main Styles 
+-----------------------------------------------------------------------------------*/
+/* main shop display */
+ul#shopmain {
+  position:relative;
+} 
+  
+ul#shopmain li.category {
+  border: 2px solid black;
+  height: 296px;
+  margin: 0 50px 50px 0;
+  width: 296px;  
+  /**/
+  position:relative;
+} 
+  
+ul#shopmain li.category.last {
+  margin: 0 0 50px 0;
+} 
+  
+ul#shopmain li.category p.categorytitle {
+  width: 150px;
+  /**/
+  position:absolute;
+  left: 0;
+  top:40px;
+} 
+  
+ul#shopmain li.category p.categorytitle a {
+  display: block;
+  padding: 0 30px 0 20px
+}
+
+ul#shopmain li.category p.categorytitle,  
+ul#shopmain li.category p.categorytitle a {
+  color: white;
+}
+
+ul#shopmain li.category img {
+  margin: 4px; /* this assumes that the images are being output @ 288px square, as they are in the delivered pdfs */
+  height:288px;
+  width:288px;
+}
+
+/* 2. Shop Category Styles
+-----------------------------------------------------------------------------------*/
+ul#categorymenu li {
+  margin: 0 10px 0 0;
+}
+
+ul#categorymenu li.last,
+ul#shopcategory li.product.last {
+  margin: 0;
+}
+
+ul#categorymenu li a,
+ul#shopcategory li.product p.product,
+div#pager a {
+  color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-transform: uppercase;
+}
+
+ul#categorymenu li a, #pager a {
+  font-size: 14px;
+}
+
+ul#shopcategory li.product p.product {
+  font-size: 16px;
+  margin: 0;
+  text-align: center;
+}
+
+ul#shopcategory li.product {
+  margin: 0 50px 20px 0;
+  width: 300px;
+}
+
+ul#shopcategory li.product img {
+  border: 2px solid black;
+  padding: 4px; /* this assumes that the images are being output @ 288px square, as they are in the delivered pdfs */
+}
+
+div#pager {
+  margin: 20px 0; 
+  text-align: right;
+}
+
+div#pager a.active {
+  color: #87858A;
+}
+
+/*3. Shop Item
+-----------------------------------------------------------------------------------*/
+#item #mainimg,
+#item ul#thumbs {
+  margin-right: 20px;
+}
+
+#item #mainimg img {
+  border: 2px solid black;
+  padding: 4px; /* this assumes that the images are being output @ 555px square, as they are in the delivered pdfs */
+  /**/
+  height: 563px;
+  width: 563px;
+}
+
+ul#thumbs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul#thumbs li {
+  border: 2px solid black;
+  margin: 0 0 20px 0;
+  padding: 4px;
+}
+
+ul#thumbs li img {
+  height: 138px;
+  width: 138px;
+  margin: 0;
+  padding: 0;
+}
+
+#item #description p {
+  margin: 0 0 10px 0;
+}
+
+#item #description p span.price {
+  display: block;
+  float: left;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 21px;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+#item #description p a.addtocart {
+  background:transparent url(img/tealflag.png) right top no-repeat;
+  color: white;
+  display: inline-block;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: normal;
+  height: 35px;
+  line-height: 35px;
+  margin: 13px 0 0 0;
+  padding: 0 30px 0 5px;
+  text-transform: lowercase;
+}
+
+/* 8. My Account & 9. Order History
+-----------------------------------------------------------------------------------*/
+ul#acctmenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul#acctmenu li {
+  margin: 4px 0;
+}
+
+ul#acctmenu li a {
+  color: #87858A;
+}
+
+
+/*
+-----------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------
+.CLEARFIX */
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    }

@@ -1,0 +1,58 @@
+body {padding-top: 30px;} /* Just to make room for header bar */
+
+#ookbheader {
+  background: #2F2926;
+  height: 22px;
+  width: 100%;
+  /**/
+  position: absolute;
+  top:0;
+  left:0;
+  /**/
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.50);
+  -moz-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.50);
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.50);  
+}
+
+#ookbheader img#ookblogo {
+  height: 50px;
+  position: absolute;
+  top:-10px;
+  left: 10px;
+}
+
+#ookbheader ul {
+  list-style: none;
+  margin: 0 0 0 50px;;
+  padding: 6px;
+}
+
+#ookbheader ul li {
+  display: block;
+  float: left;
+  margin: 0 10px;
+  padding: 0;
+}
+
+#ookbheader ul li.last {
+  margin: 0 0 0 10px;
+}
+
+
+#ookbheader ul li,
+#ookbheader ul li a {
+  color: white;
+  font-size: 10px;
+  font-family: Helvetica, Arial, Sans-Serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#ookbheader ul li.first {
+  color: #848478;
+}
+
+#ookbheader ul li.active a {
+  color: #606767;
+  text-decoration: line-through;
+}
