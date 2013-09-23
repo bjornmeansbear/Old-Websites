@@ -218,24 +218,16 @@ echo '<p><a href="http://oblique.soundmachinedream.com/">' . ($quotes[$random_nu
 </head>
 
 <body>
-    
 	<div id='wrapper'>
-	
 		<h1>A Random Oblique Strategy:</h1>
 
-        <div id='oblique_strategies'>
+	        <div id='oblique_strategies'>
+			<?php randomQuote();?>
+		</div>
 	
-   			<?php randomQuote();?>
-
-        </div>
-
 		<div id='footer'>
-		        
-        	<p>&copy; 1975-<?php echo date("Y") ?> Brian Eno and Peter Schmidt.</p>
-
-        </div>
-		<!-- END FOOTER  -->
-
+	        	<p>&copy; 1975-<?php echo date("Y") ?> Brian Eno and Peter Schmidt.</p>
+	        </div>
 	</div>
     
 </body>
